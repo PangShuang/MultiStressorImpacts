@@ -36,7 +36,7 @@ M = glm(yT ~ x1T*x2T)
 ### mixed effects model (with random effects)
 ### generalised linear mixed model (GLMM)
 library(lmerTest)
-M = lmer(yT ~ x1T*x2T + (1|RE1) + (1|RE2), REML = FALSE)
+M = lmer(yT ~ x1T*x2T + (1|RE1) + (1|RE2), REML = FALSE) #If there is only one random effect, REML=F, if the number of random effect >2, REML=T
 
 ## binary response variable
 
